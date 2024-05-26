@@ -12,8 +12,8 @@ const useAppData = () => {
 
     useEffect(() => {
         api.get('').then(res => {
-            const loadedCourses = res.data;
-            loadedCourses.forEach((course: ICourse) => {
+            const loadedCourses = res?.data;
+            loadedCourses?.forEach((course: ICourse) => {
                 if (course.image && !imageCache.current.has(course.image)) {
                     const img = new Image();
                     img.src = course.image;
