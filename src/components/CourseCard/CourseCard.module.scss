@@ -1,0 +1,28 @@
+@import "src/style/common";
+
+.card {
+  //border: solid  1px red;
+
+  .img_wrapper {
+    height: 162px;
+    border-radius: 18px 18px 0 0;
+    position: relative;
+
+    .img {
+      width: 144px;
+      height: 144px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+    }
+  }
+
+  .name_wrapper {
+    box-shadow: $shadow_card;
+    background: $white;
+    border-radius: 18px;
+    padding: 12px 18px 18px 18px;
+    height: calc(100% - 192px);
+  }
+}

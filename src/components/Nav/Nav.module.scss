@@ -1,0 +1,29 @@
+@import "src/style/common";
+
+.nav {
+  flex-shrink: 0;
+  width: 262px;
+  height: 232px;
+  border: solid 1px $gray;
+  border-radius: 18px;
+
+  .wrapper {
+    margin: 11px;
+
+    .tag {
+      height: 42px;
+      display: flex;
+      align-items: center;
+      padding-left: 12px;
+      color: $black;
+      letter-spacing: -0.1px;
+      cursor: pointer;
+
+      &[data-active="true"] {
+        background: $link_active;
+        color: $white;
+        border-radius: 12px;
+      }
+    }
+  }
+}
